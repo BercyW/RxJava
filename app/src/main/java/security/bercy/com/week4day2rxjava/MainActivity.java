@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import security.bercy.com.week4day2rxjava.operators.BufferActivity;
 import security.bercy.com.week4day2rxjava.operators.IntervalActivity;
 import security.bercy.com.week4day2rxjava.operators.MapActivity;
 
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startBufferActivity(View view) {
+        startActivity(new Intent(MainActivity.this,BufferActivity.class));
     }
 
     public void startFilterActivity(View view) {
